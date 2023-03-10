@@ -1,0 +1,109 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: rgb(151, 145, 145);
+    background-image: url('./assets/fondo-card.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    transition: all 1s;
+    box-shadow: 5px 5px 10px black;
+}
+
+.logo-superior {
+    border-radius: 150%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.container h2 {
+    font-size: 50px;
+    text-align: center;
+    color: bisque;
+    text-shadow: 0px 0px 10px black;
+}
+
+.seccion-info{
+    display: none;
+    flex-direction: row;
+    background-color: rgba(245, 243, 243, 0.851);
+    justify-content: space-evenly;
+    width: 90%;
+    
+}
+
+.mini-card{
+    height: 100px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-card h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.mini-card a {
+    font-size: 20px;
+    text-decoration:none;
+    color: rgb(240, 0, 172);
+}
+
+.boton-card {
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(255, 123, 0);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+}
+
+.boton-card:hover {
+    cursor:pointer;
+    box-shadow: 0px 0px 30px rgb(255, 123, 0);
+}
+
+.container:hover {
+    width: 800px;
+    height: 500px;
+}
+
+.container:hover .seccion-info {
+    display: flex;
+}
